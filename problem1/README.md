@@ -34,7 +34,7 @@ $ docker-compose -f docker-compose.yml up
 
 Now to run the program
 ```bash
-$ java -jar target/problem1-0.0.1-SNAPSHOT.jar
+$ java -jar target/problem1-0.0.1-SNAPSHOT.jar <path_to_file>
 ```
 
 ## Tests

@@ -1,6 +1,8 @@
 package tech.espublic.problem2.execute;
 
-import org.junit.Before;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 import tech.espublic.problem2.repository.FilmPeopleRepository;
 import tech.espublic.problem2.repository.FilmRepository;
 import tech.espublic.problem2.repository.FilmStarshipRepository;
@@ -38,7 +40,7 @@ class DBBuilderTest {
 
     private DBBuilder dbBuilder;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         this.webClientRequester = mock(WebClientRequester.class);
         this.filmRepository = mock(FilmRepository.class);
@@ -55,7 +57,8 @@ class DBBuilderTest {
     /**
      * Test for insertion in the database without relations
      */
-    // @Test
+    @Disabled("not full implemented")
+    @Test
     void buildDWithNoRelations() {
         OtherApisResource otherApisResource = AuxiliarBuilderObjects.buildDefaultOtherApisResource();
         FilmPaginationResource filmPaginationResource = AuxiliarBuilderObjects.buildDefaultFilmPaginationResource();
