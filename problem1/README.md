@@ -14,8 +14,6 @@ To run these program there is the need to have installed:
 | spring-boot-starter | It is used for core starter, including auto-configuration support, logging, and YAML. |
 | spring-boot-starter-data-jpa | Lib for access and manipulate databases using hibernate |
 | postgresql | PostgreSQL JDBC Driver Postgresql |
-| spring-boot-starter-webflux | Starter for building WebFlux applications using Spring Framework's Reactive Web support |
-| reactor-spring | Reactor Spring components (needed for webclient) |
 | lombok | Automatic Resource Management, automatic generation of getters, setters, equals, hashCode and toString, ... |
 | mapstruct | Code generator that greatly simplifies the implementation of mappings between Java bean types based |
 | spring-boot-starter-test | Starter for testing Spring Boot applications with libraries including JUnit, Hamcrest and Mockito |	
