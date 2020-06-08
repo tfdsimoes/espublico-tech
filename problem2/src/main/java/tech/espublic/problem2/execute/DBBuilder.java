@@ -62,7 +62,7 @@ public class DBBuilder {
     }
 
     /**
-     * Function that will lunch the build of the db by steps
+     * Function that will launch the build of the db by steps
      */
     @Transactional
     public void buildDB() {

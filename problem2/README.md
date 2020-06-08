@@ -25,7 +25,7 @@ To run these program there is the need to have installed:
 
 To build just need to run the following command
 ```bash
-$ ./mvnw clean install
+$ ./mvnw clean package
 ```
 
 To run the problem is need a database, so there is the need to run the docker-compose in the root

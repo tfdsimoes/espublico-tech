@@ -10,6 +10,9 @@ import java.util.List;
 
 import static org.mapstruct.NullValueCheckStrategy.ON_IMPLICIT_CONVERSION;
 
+/**
+ * Interface responsible to map {@link FilmResource} to {@link Film}
+ */
 @Mapper(nullValueCheckStrategy = ON_IMPLICIT_CONVERSION)
 public interface FilmMapper {
 

@@ -1,7 +1,6 @@
 package tech.espublic.problem2.execute;
 
 import org.junit.Before;
-import org.junit.jupiter.api.Test;
 import tech.espublic.problem2.repository.FilmPeopleRepository;
 import tech.espublic.problem2.repository.FilmRepository;
 import tech.espublic.problem2.repository.FilmStarshipRepository;

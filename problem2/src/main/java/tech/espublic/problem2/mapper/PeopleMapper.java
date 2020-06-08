@@ -10,14 +10,17 @@ import java.util.List;
 
 import static org.mapstruct.NullValueCheckStrategy.ON_IMPLICIT_CONVERSION;
 
+/**
+ * Interface responsible to map {@link PeopleResource} to {@link People}
+ */
 @Mapper(nullValueCheckStrategy = ON_IMPLICIT_CONVERSION)
 public interface PeopleMapper {
 
     PeopleMapper INSTANCE = Mappers.getMapper(PeopleMapper.class);
 
-    @Mapping( target = "id", ignore = true)
-    @Mapping( target = "starshipPeopleList", ignore = true)
-    @Mapping( target = "filmPeopleList", ignore = true)
+    @Mapping(target = "id", ignore = true)
+    @Mapping(target = "starshipPeopleList", ignore = true)
+    @Mapping(target = "filmPeopleList", ignore = true)
     People peopleResourceToPeople(PeopleResource peopleResource);
 
     List<People> peopleResourceListToPeopleList(List<PeopleResource> peopleResourceList);

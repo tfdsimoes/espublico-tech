@@ -9,16 +9,16 @@ import tech.espublic.problem2.execute.Problem2Service;
  * Start class of application
  */
 @SpringBootApplication
-@EnableConfigurationProperties( {Problem2Properties.class} )
+@EnableConfigurationProperties({Problem2Properties.class})
 public class Problem2Application {
 
-	private final Problem2Service service;
+    private final Problem2Service service;
 
-	public Problem2Application(Problem2Service service) {
-		this.service = service;
-	}
+    public Problem2Application(Problem2Service service) {
+        this.service = service;
+    }
 
-	public static void main(String[] args) {
-		SpringApplication.run(Problem2Application.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(Problem2Application.class, args);
+    }
 }
